@@ -1,0 +1,6 @@
+name: CoreProtect
+main: CoreProtect\CoreProtect
+version: 0.1.5
+description: "A light and efficent world backup plugin for PocketMine-MP"
+api: [1.0.0, 2.0.0, 3.0.0]
+author: ImagicalGamer
