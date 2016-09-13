@@ -74,7 +74,7 @@ class CoreProtectCommand extends BaseCommand{
             $this->plugin->getServer()->getScheduler()->scheduleAsyncTask($task = new BackupTask($args[1], $path, $ppath));
         }
         else if($args[0] == "info" || $args[0] == "i"){
-            $sender->sendMessage( . TextFormat::GREEN . "CoreProtect v1.0.5 is a light and efficent world backup plugin created by ImagicalGamer!");
+            $sender->sendMessage(TextFormat::GREEN . "CoreProtect v1.0.5 is a light and efficent world backup plugin created by ImagicalGamer!");
             return;
         }
         else if($args[0] == "restore" || $args[0] == "r")
@@ -99,7 +99,7 @@ class CoreProtectCommand extends BaseCommand{
         else if($args[0] == "list" || $args[0] == "ls")
         {
             $lvls = array();
-            $dir = scandir($this->plugin->getServer()->getDataPath() . DIRECTORY_SEPARATOR . "worlds/");
+            $dir = scandir($this->plugin->getDataFolder() . "world_backups/");
             foreach($dir as $d){
                 if(substr($d, 0, 1) === "."){
                     continue;
