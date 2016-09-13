@@ -27,6 +27,7 @@ class CoreProtectCommand extends BaseCommand{
         $this->plugin = $plugin;
         $this->setUsage("/cp <arg|help>");
         $this->setDescription("CoreProtect Command Menu");
+        $this->setAliases(array("coreprotect", "corep"));
     }
 
     public function execute(CommandSender $sender, $commandLabel, array $args)
